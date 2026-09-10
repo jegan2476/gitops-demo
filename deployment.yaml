@@ -6,7 +6,7 @@ metadata:
   labels:
     app: demo-app
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: demo-app
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: my-app:v2.0
+        image: my-app:v3.0
         imagePullPolicy: IfNotPresent   # Uses the image already present in Minikube
         ports:
         - containerPort: 8080
