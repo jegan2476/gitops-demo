@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: my-app:v1.0
+        image: my-app:v2.0
         imagePullPolicy: IfNotPresent   # Uses the image already present in Minikube
         ports:
         - containerPort: 8080
